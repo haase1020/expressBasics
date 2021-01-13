@@ -1,0 +1,24 @@
+{
+  "name": "expressbasics",
+  "version": "1.0.0",
+  "description": "my notes for learning ExpressJS",
+  "main": "expressServer.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haase1020/expressBasics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haase1020/expressBasics/issues"
+  },
+  "homepage": "https://github.com/haase1020/expressBasics#readme"
+}
