@@ -25,9 +25,16 @@ function validateUser(req, res, next) {
   next();
 }
 
+//this will run validateUser on ALL path, all methods!!
+app.use(validateUser);
+//this will run validateUser on /admin, all methods!!
 app.use("/admin", validateUser);
+//this will run validateUser on /, only on get methods
 app.get("/", validateUser); //this is the same as app.use!!
 
+//app.use is just the easier example of app.get
+
+//this was the first example
 app.get("/", (req, res, next) => {
   res.send("<h1>Hi there from Express 201!</h1>");
   console.log(res.locals.validated);
